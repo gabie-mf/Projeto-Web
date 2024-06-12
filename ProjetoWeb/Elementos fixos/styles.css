@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+  
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 4%;
+}
+  
+.logo {
+    width: 15vw;
+    height: auto; 
+    margin-left: 4%; 
+}
+  
+.menu {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-around;
+    
+}
+  
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0 3%;
+    padding: 0;
+}
+  
+.menu li {
+    margin: 0 3%; 
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #5A5A5A;
+    font-size: 1.8vw; 
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+  
+#contato {
+    display: inline-block;
+    padding: 1% 2%; 
+    background-color: #FFDD00; 
+    color: #000; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 4%; 
+    margin-right: 2%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+#contato:hover {
+    background-color: #FFCC00; 
+}
+
+
+/* Body */
+.textContHome {
+    width: 45%;
+    height: auto;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.tituloHome {
+    color: #5A5A5A;
+    font-size: 6vw; 
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.textoHome {
+    color: #5A5A5A;
+    font-size: 4vw; 
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 3%;
+}
+.carrossel {
+    width: 40%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 20%;
+}
+.bodyContHome {
+display:flex;
+align-items: flex-start;
+}
+/* Desktop */
+@media (min-width: 769px) {
+    .carrossel {
+      width: 40%; 
+    }
+  
+    .textContHome {
+        width: 45%;
+    }
+
+    .bodyContHome {
+      flex-direction: row; 
+    }
+  }
+  
+/* Mobile */
+@media (max-width: 768px) {
+    .carrossel {
+      width: 75%; 
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  
+    .textContHome {
+        width: 100%;
+    }
+    
+    .bodyContHome {
+      flex-direction: column; 
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .divHeader {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 40vw;
+        height: auto;
+    }
+    .menu a {
+        font-size: 4vw;
+    }
+    .menu li {
+        margin-bottom: 2%;
+    }
+
+}
+
+
+ 
+
+/* Footer Home*/
+.homeFooter {
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+    position: fixed; 
+    bottom: 0; 
+}
+
+/* Whatsapp Icon */
+.whatsappIcon {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10%;
+    right: 5%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
